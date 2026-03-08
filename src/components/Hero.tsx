@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const roles = ["Designer", "Builder", "Creator", "Student", "Innovator"];
+const roles = ["Future Lawyer", "Advocate", "Law Student", "Leader", "Thinker"];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -58,11 +58,11 @@ export default function Hero() {
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight tracking-tight">
             <span className="text-white">Hi, I&apos;m </span>
-            <span className="gradient-text">Juju</span>
+            <span className="gradient-text">Julian Laville</span>
           </h1>
 
           <div className="mt-6 text-xl sm:text-2xl md:text-3xl font-light text-zinc-400 h-10">
-            A{" "}
+            A {" "}
             <span className="font-semibold text-white">{text}</span>
             <span className="typewriter-cursor" />
           </div>
@@ -74,8 +74,8 @@ export default function Hero() {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="mt-8 text-zinc-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed"
         >
-          York University student crafting beautiful digital experiences with
-          bold design and creative vision. Turning ideas into reality, one project at a time.
+          York University law student dedicated to justice, advocacy, and making
+          a meaningful impact. Building a future in law, one case at a time.
         </motion.p>
 
         <motion.div

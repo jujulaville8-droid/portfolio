@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 
 const skillCategories = [
   {
-    title: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "HTML/CSS"],
+    title: "Legal Knowledge",
+    skills: ["Constitutional Law", "Criminal Law", "Contract Law", "Human Rights", "Privacy Law", "Legal Ethics"],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Python", "REST APIs", "PostgreSQL", "MongoDB", "Firebase"],
+    title: "Professional Skills",
+    skills: ["Legal Research", "Case Analysis", "Legal Writing", "Negotiation", "Public Speaking", "Critical Thinking"],
   },
   {
-    title: "Tools & Other",
-    skills: ["Git", "Figma", "VS Code", "Vercel", "Docker", "Linux"],
+    title: "Tools & Interests",
+    skills: ["Westlaw", "LexisNexis", "CanLII", "Moot Court", "Mediation", "Policy Analysis"],
   },
 ];
 
@@ -38,10 +38,10 @@ export default function Skills() {
           className="text-center mb-16"
         >
           <p className="text-sm font-semibold tracking-widest uppercase text-purple-400 mb-3">
-            What I Work With
+            Areas of Expertise
           </p>
           <h2 className="text-4xl md:text-5xl font-bold">
-            My <span className="gradient-text">toolkit</span>
+            My <span className="gradient-text">strengths</span>
           </h2>
         </motion.div>
 

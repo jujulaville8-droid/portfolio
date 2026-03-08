@@ -16,13 +16,13 @@ export default function Contact() {
             Get In Touch
           </p>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Let&apos;s build something{" "}
-            <span className="gradient-text">amazing</span>
+            Let&apos;s connect and make{" "}
+            <span className="gradient-text">an impact</span>
           </h2>
           <p className="text-zinc-400 text-lg mb-10 leading-relaxed">
-            Have a project in mind or just want to connect? I&apos;m always open
-            to new opportunities and collaborations. Drop me a line and
-            let&apos;s make it happen.
+            Interested in connecting, collaborating, or discussing opportunities
+            in law? I&apos;m always open to new conversations. Drop me a line
+            and let&apos;s make it happen.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

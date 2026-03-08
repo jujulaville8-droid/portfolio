@@ -4,28 +4,28 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Humanizer AI",
+    title: "Mock Trial Competition",
     description:
-      "An intelligent text transformation tool that rewrites AI-generated content to sound more natural and human-like.",
-    tags: ["Next.js", "AI/ML", "Tailwind CSS"],
+      "Led a team through a multi-round mock trial competition, developing case strategy, witness examinations, and closing arguments.",
+    tags: ["Litigation", "Public Speaking", "Teamwork"],
     gradient: "from-purple-600 to-indigo-600",
-    icon: "🧠",
+    icon: "⚖️",
   },
   {
-    title: "DevFlow",
+    title: "Legal Research Paper",
     description:
-      "A real-time collaborative dashboard for development teams to track progress, manage sprints, and visualize workflows.",
-    tags: ["React", "Node.js", "WebSocket"],
+      "Authored an in-depth research paper analyzing the intersection of technology and privacy law in the Canadian legal landscape.",
+    tags: ["Research", "Privacy Law", "Analysis"],
     gradient: "from-cyan-500 to-blue-600",
-    icon: "⚡",
+    icon: "📜",
   },
   {
-    title: "PixelForge",
+    title: "Community Legal Aid",
     description:
-      "A generative art platform that creates unique, algorithm-driven visual artwork from user-defined parameters.",
-    tags: ["TypeScript", "Canvas API", "Framer Motion"],
+      "Volunteered with a community legal clinic providing pro bono assistance to underserved populations navigating the justice system.",
+    tags: ["Pro Bono", "Advocacy", "Community"],
     gradient: "from-purple-500 to-cyan-500",
-    icon: "🎨",
+    icon: "🤝",
   },
 ];
 
@@ -44,8 +44,8 @@ export default function Projects() {
             Featured Work
           </p>
           <h2 className="text-4xl md:text-5xl font-bold">
-            Projects I&apos;ve{" "}
-            <span className="gradient-text">crafted</span>
+            Work I&apos;m{" "}
+            <span className="gradient-text">proud of</span>
           </h2>
         </motion.div>
 

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Developer & Creator",
-  description: "A bold, futuristic personal portfolio",
+  title: "Julian Laville | Future Lawyer & Advocate",
+  description: "Personal portfolio of Julian Laville — York University law student",
 };
 
 export default function RootLayout({

@@ -16,8 +16,8 @@ export default function About() {
             About Me
           </p>
           <h2 className="text-4xl md:text-5xl font-bold mb-16">
-            Passionate about building{" "}
-            <span className="gradient-text">what matters</span>
+            Passionate about pursuing{" "}
+            <span className="gradient-text">justice</span>
           </h2>
         </motion.div>
 
@@ -39,7 +39,7 @@ export default function About() {
                   </div>
                   <div className="space-y-2">
                     <div className="flex justify-center gap-2">
-                      {["React", "Next.js", "Node"].map((t) => (
+                      {["Law", "Advocacy", "Justice"].map((t) => (
                         <span
                           key={t}
                           className="px-3 py-1 text-xs rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20"
@@ -49,7 +49,7 @@ export default function About() {
                       ))}
                     </div>
                     <div className="flex justify-center gap-2">
-                      {["TypeScript", "Tailwind"].map((t) => (
+                      {["Research", "Leadership"].map((t) => (
                         <span
                           key={t}
                           className="px-3 py-1 text-xs rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/20"
@@ -73,20 +73,20 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-zinc-300 leading-relaxed">
-              I&apos;m a student at York University with a passion for creating
-              sleek, impactful digital experiences. I blend design thinking with
-              creative problem-solving to build things that stand out.
+              I&apos;m a law student at York University with a passion for justice
+              and advocacy. I bring critical thinking and determination to every
+              challenge, striving to make a real difference.
             </p>
             <p className="text-lg text-zinc-400 leading-relaxed">
-              Balancing academics and ambition, I focus on turning complex ideas
-              into simple, beautiful interfaces. Every project is an opportunity
-              to push boundaries and grow as a creator.
+              Balancing academics and ambition, I focus on understanding complex
+              legal frameworks and championing the rights of others. Every case
+              is an opportunity to push boundaries and grow as a future lawyer.
             </p>
             <div className="grid grid-cols-2 gap-6 pt-4">
               {[
-                { label: "Projects Built", value: "15+" },
-                { label: "Technologies", value: "20+" },
-                { label: "Years Creating", value: "3+" },
+                { label: "Mock Trials", value: "10+" },
+                { label: "Areas of Interest", value: "5+" },
+                { label: "Years at York", value: "3+" },
                 { label: "Coffees Consumed", value: "∞" },
               ].map((stat) => (
                 <div key={stat.label} className="space-y-1">
