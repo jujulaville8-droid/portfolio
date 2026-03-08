@@ -17,15 +17,6 @@ const skillCategories = [
   },
 ];
 
-const pillColors = [
-  "from-amber-700/20 to-amber-700/5 border-amber-700/30 text-amber-300",
-  "from-stone-600/20 to-stone-600/5 border-stone-600/30 text-stone-300",
-  "from-amber-600/20 to-amber-600/5 border-amber-600/30 text-amber-200",
-  "from-yellow-800/20 to-yellow-800/5 border-yellow-800/30 text-yellow-300",
-  "from-stone-500/20 to-stone-500/5 border-stone-500/30 text-stone-300",
-  "from-amber-800/20 to-amber-800/5 border-amber-800/30 text-amber-300",
-];
-
 export default function Skills() {
   return (
     <section id="skills" className="relative py-32 px-6">
@@ -37,12 +28,20 @@ export default function Skills() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <p className="text-sm font-semibold tracking-widest uppercase text-amber-600 mb-3">
+          <p className="text-sm font-semibold tracking-widest uppercase text-amber-800/60 mb-3">
             Areas of Expertise
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-4xl md:text-5xl font-bold text-stone-800">
             My <span className="gradient-text">strengths</span>
           </h2>
+          {/* Vintage divider */}
+          <div className="flex items-center justify-center gap-4 mt-4">
+            <div className="w-20 h-px bg-amber-800/25" />
+            <svg className="w-5 h-5 text-amber-800/30" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M10 2 L12 8 L18 10 L12 12 L10 18 L8 12 L2 10 L8 8 Z" />
+            </svg>
+            <div className="w-20 h-px bg-amber-800/25" />
+          </div>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -53,11 +52,13 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.6, delay: catIndex * 0.15 }}
-              className="glow-card rounded-2xl p-6"
+              className="glow-card rounded-sm p-6"
             >
-              <h3 className="text-lg font-bold text-white mb-5">
+              <h3 className="text-lg font-bold text-stone-800 mb-2">
                 {category.title}
               </h3>
+              {/* Small ornamental line under title */}
+              <div className="w-10 h-px bg-amber-800/25 mb-5" />
               <div className="flex flex-wrap gap-2.5">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.span
@@ -69,10 +70,8 @@ export default function Skills() {
                       duration: 0.4,
                       delay: catIndex * 0.1 + skillIndex * 0.07,
                     }}
-                    whileHover={{ scale: 1.08, y: -2 }}
-                    className={`px-4 py-2 text-sm font-medium rounded-full bg-gradient-to-r border cursor-default ${
-                      pillColors[(catIndex * 3 + skillIndex) % pillColors.length]
-                    }`}
+                    whileHover={{ scale: 1.05, y: -1 }}
+                    className="px-4 py-2 text-sm font-medium rounded-sm bg-stone-50 text-stone-600 border border-stone-200 cursor-default hover:border-amber-800/25 hover:text-stone-800 transition-colors"
                   >
                     {skill}
                   </motion.span>

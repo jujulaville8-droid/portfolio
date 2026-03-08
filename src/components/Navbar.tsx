@@ -25,7 +25,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass shadow-lg" : ""
+        scrolled ? "glass shadow-sm" : ""
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -37,16 +37,16 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm text-stone-400 hover:text-amber-200 transition-colors duration-300 relative group"
+              className="text-sm text-stone-500 hover:text-stone-800 transition-colors duration-300 relative group"
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-amber-700 to-amber-500 transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-amber-800/40 transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </div>
         <a
           href="#contact"
-          className="glow-button px-4 py-2 rounded-full text-sm font-semibold text-white"
+          className="glow-button px-4 py-2 rounded-sm text-xs font-semibold tracking-wide uppercase"
         >
           Let&apos;s Talk
         </a>
