@@ -3,7 +3,18 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const roles = ["Future Lawyer", "Advocate", "Law Student", "Leader", "Thinker"];
+const roles = [
+  "Driven",
+  "Passionate",
+  "Ambitious",
+  "Dedicated",
+  "Resilient",
+  "Curious",
+  "Fearless",
+  "Principled",
+  "Thoughtful",
+  "Determined",
+];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -117,7 +128,6 @@ export default function Hero() {
           </div>
 
           <div className="mt-6 text-xl sm:text-2xl md:text-3xl font-light text-stone-500 h-10">
-            A {" "}
             <span className="font-semibold text-stone-700">{text}</span>
             <span className="typewriter-cursor" />
           </div>
