@@ -18,12 +18,12 @@ const skillCategories = [
 ];
 
 const pillColors = [
-  "from-purple-500/20 to-purple-500/5 border-purple-500/30 text-purple-300",
-  "from-cyan-500/20 to-cyan-500/5 border-cyan-500/30 text-cyan-300",
-  "from-blue-500/20 to-blue-500/5 border-blue-500/30 text-blue-300",
-  "from-indigo-500/20 to-indigo-500/5 border-indigo-500/30 text-indigo-300",
-  "from-violet-500/20 to-violet-500/5 border-violet-500/30 text-violet-300",
-  "from-teal-500/20 to-teal-500/5 border-teal-500/30 text-teal-300",
+  "from-amber-700/20 to-amber-700/5 border-amber-700/30 text-amber-300",
+  "from-stone-600/20 to-stone-600/5 border-stone-600/30 text-stone-300",
+  "from-amber-600/20 to-amber-600/5 border-amber-600/30 text-amber-200",
+  "from-yellow-800/20 to-yellow-800/5 border-yellow-800/30 text-yellow-300",
+  "from-stone-500/20 to-stone-500/5 border-stone-500/30 text-stone-300",
+  "from-amber-800/20 to-amber-800/5 border-amber-800/30 text-amber-300",
 ];
 
 export default function Skills() {
@@ -37,7 +37,7 @@ export default function Skills() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <p className="text-sm font-semibold tracking-widest uppercase text-purple-400 mb-3">
+          <p className="text-sm font-semibold tracking-widest uppercase text-amber-600 mb-3">
             Areas of Expertise
           </p>
           <h2 className="text-4xl md:text-5xl font-bold">

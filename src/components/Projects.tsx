@@ -8,7 +8,7 @@ const projects = [
     description:
       "Led a team through a multi-round mock trial competition, developing case strategy, witness examinations, and closing arguments.",
     tags: ["Litigation", "Public Speaking", "Teamwork"],
-    gradient: "from-purple-600 to-indigo-600",
+    gradient: "from-amber-800 to-amber-600",
     icon: "⚖️",
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     description:
       "Authored an in-depth research paper analyzing the intersection of technology and privacy law in the Canadian legal landscape.",
     tags: ["Research", "Privacy Law", "Analysis"],
-    gradient: "from-cyan-500 to-blue-600",
+    gradient: "from-stone-700 to-stone-500",
     icon: "📜",
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     description:
       "Volunteered with a community legal clinic providing pro bono assistance to underserved populations navigating the justice system.",
     tags: ["Pro Bono", "Advocacy", "Community"],
-    gradient: "from-purple-500 to-cyan-500",
+    gradient: "from-amber-700 to-stone-600",
     icon: "🤝",
   },
 ];
@@ -40,7 +40,7 @@ export default function Projects() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <p className="text-sm font-semibold tracking-widest uppercase text-purple-400 mb-3">
+          <p className="text-sm font-semibold tracking-widest uppercase text-amber-600 mb-3">
             Featured Work
           </p>
           <h2 className="text-4xl md:text-5xl font-bold">
@@ -70,7 +70,7 @@ export default function Projects() {
                 <h3 className="text-xl font-bold text-white mb-3">
                   {project.title}
                 </h3>
-                <p className="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">
+                <p className="text-stone-400 text-sm leading-relaxed mb-6 flex-grow">
                   {project.description}
                 </p>
 
@@ -78,7 +78,7 @@ export default function Projects() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 text-xs rounded-full bg-white/5 text-zinc-400 border border-white/10"
+                      className="px-3 py-1 text-xs rounded-full bg-white/5 text-stone-400 border border-white/10"
                     >
                       {tag}
                     </span>

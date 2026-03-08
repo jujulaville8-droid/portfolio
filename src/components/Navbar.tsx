@@ -37,10 +37,10 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm text-zinc-400 hover:text-white transition-colors duration-300 relative group"
+              className="text-sm text-stone-400 hover:text-amber-200 transition-colors duration-300 relative group"
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-purple-500 to-cyan-400 transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-amber-700 to-amber-500 transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </div>

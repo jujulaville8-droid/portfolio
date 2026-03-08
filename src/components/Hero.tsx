@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="orb orb-2" />
 
       {/* Grid overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#09090b] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#1a1510] pointer-events-none" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <motion.div
@@ -51,7 +51,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-sm md:text-base font-medium tracking-widest uppercase text-zinc-500 mb-6"
+            className="text-sm md:text-base font-medium tracking-widest uppercase text-stone-500 mb-6"
           >
             Welcome to my world
           </motion.p>
@@ -61,9 +61,9 @@ export default function Hero() {
             <span className="gradient-text">Julian Laville</span>
           </h1>
 
-          <div className="mt-6 text-xl sm:text-2xl md:text-3xl font-light text-zinc-400 h-10">
+          <div className="mt-6 text-xl sm:text-2xl md:text-3xl font-light text-stone-400 h-10">
             A {" "}
-            <span className="font-semibold text-white">{text}</span>
+            <span className="font-semibold text-amber-200">{text}</span>
             <span className="typewriter-cursor" />
           </div>
         </motion.div>
@@ -72,7 +72,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          className="mt-8 text-zinc-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed"
+          className="mt-8 text-stone-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed"
         >
           York University law student dedicated to justice, advocacy, and making
           a meaningful impact. Building a future in law, one case at a time.
@@ -92,7 +92,7 @@ export default function Hero() {
           </a>
           <a
             href="#about"
-            className="px-8 py-4 rounded-full text-base font-semibold text-zinc-400 border border-zinc-800 hover:border-purple-500/40 hover:text-white transition-all duration-300"
+            className="px-8 py-4 rounded-full text-base font-semibold text-stone-400 border border-stone-700 hover:border-amber-700/50 hover:text-amber-200 transition-all duration-300"
           >
             About Me
           </a>

@@ -12,7 +12,7 @@ export default function About() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-sm font-semibold tracking-widest uppercase text-purple-400 mb-3">
+          <p className="text-sm font-semibold tracking-widest uppercase text-amber-600 mb-3">
             About Me
           </p>
           <h2 className="text-4xl md:text-5xl font-bold mb-16">
@@ -31,10 +31,10 @@ export default function About() {
             className="relative"
           >
             <div className="relative w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/30 via-cyan-500/20 to-purple-800/30 rounded-3xl" />
-              <div className="absolute inset-[2px] bg-zinc-950 rounded-3xl flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-800/30 via-amber-600/15 to-amber-900/30 rounded-3xl" />
+              <div className="absolute inset-[2px] bg-stone-950 rounded-3xl flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center mb-6">
+                  <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-amber-700 to-amber-500 flex items-center justify-center mb-6">
                     <span className="text-5xl font-extrabold text-white">J</span>
                   </div>
                   <div className="space-y-2">
@@ -42,7 +42,7 @@ export default function About() {
                       {["Law", "Advocacy", "Justice"].map((t) => (
                         <span
                           key={t}
-                          className="px-3 py-1 text-xs rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20"
+                          className="px-3 py-1 text-xs rounded-full bg-amber-700/10 text-amber-300 border border-amber-700/20"
                         >
                           {t}
                         </span>
@@ -52,7 +52,7 @@ export default function About() {
                       {["Research", "Leadership"].map((t) => (
                         <span
                           key={t}
-                          className="px-3 py-1 text-xs rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/20"
+                          className="px-3 py-1 text-xs rounded-full bg-stone-600/10 text-stone-300 border border-stone-600/20"
                         >
                           {t}
                         </span>
@@ -72,12 +72,12 @@ export default function About() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="space-y-6"
           >
-            <p className="text-lg text-zinc-300 leading-relaxed">
+            <p className="text-lg text-stone-300 leading-relaxed">
               I&apos;m a law student at York University with a passion for justice
               and advocacy. I bring critical thinking and determination to every
               challenge, striving to make a real difference.
             </p>
-            <p className="text-lg text-zinc-400 leading-relaxed">
+            <p className="text-lg text-stone-400 leading-relaxed">
               Balancing academics and ambition, I focus on understanding complex
               legal frameworks and championing the rights of others. Every case
               is an opportunity to push boundaries and grow as a future lawyer.
@@ -91,7 +91,7 @@ export default function About() {
               ].map((stat) => (
                 <div key={stat.label} className="space-y-1">
                   <p className="text-3xl font-bold gradient-text">{stat.value}</p>
-                  <p className="text-sm text-zinc-500">{stat.label}</p>
+                  <p className="text-sm text-stone-500">{stat.label}</p>
                 </div>
               ))}
             </div>
