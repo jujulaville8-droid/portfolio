@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const roles = [
@@ -18,30 +18,13 @@ const roles = [
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
-  const [text, setText] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const currentRole = roles[roleIndex];
-    const timeout = setTimeout(
-      () => {
-        if (!isDeleting) {
-          setText(currentRole.slice(0, text.length + 1));
-          if (text.length + 1 === currentRole.length) {
-            setTimeout(() => setIsDeleting(true), 2500);
-          }
-        } else {
-          setText(currentRole.slice(0, text.length - 1));
-          if (text.length === 0) {
-            setIsDeleting(false);
-            setRoleIndex((prev) => (prev + 1) % roles.length);
-          }
-        }
-      },
-      isDeleting ? 80 : 150
-    );
-    return () => clearTimeout(timeout);
-  }, [text, isDeleting, roleIndex]);
+    const interval = setInterval(() => {
+      setRoleIndex((prev) => (prev + 1) % roles.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden dot-pattern">
@@ -127,9 +110,19 @@ export default function Hero() {
             <div className="w-24 h-px bg-amber-800/30" />
           </div>
 
-          <div className="mt-6 text-xl sm:text-2xl md:text-3xl font-light text-stone-500 h-10">
-            <span className="font-semibold text-stone-700">{text}</span>
-            <span className="typewriter-cursor" />
+          <div className="mt-6 text-xl sm:text-2xl md:text-3xl font-light text-stone-500 h-10 relative flex items-center justify-center">
+            <AnimatePresence mode="wait">
+              <motion.span
+                key={roles[roleIndex]}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{ duration: 0.6, ease: "easeInOut" }}
+                className="font-semibold text-stone-700 absolute"
+              >
+                {roles[roleIndex]}
+              </motion.span>
+            </AnimatePresence>
           </div>
         </motion.div>
 
