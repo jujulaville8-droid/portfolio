@@ -5,33 +5,33 @@ import { useState } from "react";
 
 const services = [
   {
-    title: "Legal Consultation",
-    description: "One-on-one consultation to discuss your legal questions, review your situation, and provide initial guidance.",
+    title: "Strategic Litigation Counsel",
+    description: "Comprehensive case assessment, strategy development, and senior advocacy for complex disputes in commercial, public, and constitutional law.",
     icon: "⚖️",
   },
   {
-    title: "Document Review",
-    description: "Thorough review of contracts, agreements, and legal documents with detailed notes and recommendations.",
-    icon: "📄",
+    title: "Arbitration & Dispute Resolution",
+    description: "Expert representation in domestic and international arbitration proceedings, mediation, and alternative dispute resolution at the highest level.",
+    icon: "🏛️",
   },
   {
-    title: "Legal Research",
-    description: "In-depth research on specific legal topics, case law analysis, and written summaries of findings.",
-    icon: "🔍",
+    title: "Advisory & Regulatory Opinion",
+    description: "Authoritative legal opinions, regulatory compliance guidance, and strategic advisory for boards, executives, and government bodies.",
+    icon: "📜",
   },
 ];
 
 export default function Services() {
   const [hours, setHours] = useState(1);
   const [selectedService, setSelectedService] = useState(0);
-  const rate = 250;
+  const rate = 750;
 
   const handleBook = () => {
     const service = services[selectedService];
     const total = hours * rate;
     const subject = encodeURIComponent(`Booking Request: ${service.title}`);
     const body = encodeURIComponent(
-      `Hi Julian,\n\nI'd like to book your ${service.title} service.\n\nDetails:\n- Service: ${service.title}\n- Hours: ${hours}\n- Estimated Total: $${total}\n\nPlease let me know your availability.\n\nThank you.`
+      `Dear Mr. Simon KC,\n\nI wish to retain your services for ${service.title}.\n\nDetails:\n- Service: ${service.title}\n- Hours: ${hours}\n- Estimated Total: $${total}\n\nPlease advise on your earliest availability.\n\nYours faithfully.`
     );
     window.location.href = `mailto:jujulaville8@gmail.com?subject=${subject}&body=${body}`;
   };
@@ -50,7 +50,7 @@ export default function Services() {
             Services
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-stone-800">
-            Book a <span className="gradient-text">session</span>
+            Retain <span className="gradient-text">counsel</span>
           </h2>
           {/* Vintage divider */}
           <div className="flex items-center justify-center gap-4 mt-4">
@@ -61,8 +61,8 @@ export default function Services() {
             <div className="w-20 h-px bg-amber-800/25" />
           </div>
           <p className="mt-6 text-stone-500 text-lg max-w-2xl mx-auto">
-            Professional legal services at{" "}
-            <span className="font-bold text-stone-700">$250/hour</span>
+            Senior King&apos;s Counsel representation at{" "}
+            <span className="font-bold text-stone-700">$750/hour</span>
           </p>
         </motion.div>
 
@@ -184,7 +184,7 @@ export default function Services() {
               onClick={handleBook}
               className="glow-button w-full py-4 rounded-sm text-sm font-bold tracking-wide uppercase"
             >
-              Book Now
+              Instruct Now
             </button>
             <p className="text-xs text-stone-400 text-center mt-3">
               Opens your email client with booking details

@@ -4,16 +4,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const roles = [
-  "Driven",
-  "Passionate",
-  "Ambitious",
-  "Dedicated",
-  "Resilient",
-  "Curious",
-  "Fearless",
-  "Principled",
-  "Thoughtful",
-  "Determined",
+  "King's Counsel",
+  "Litigator",
+  "Advocate",
+  "Strategist",
+  "Counsellor",
+  "Negotiator",
+  "Arbitrator",
+  "Authority",
+  "Trial Lawyer",
+  "Mentor",
 ];
 
 export default function Hero() {
@@ -83,7 +83,7 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="text-sm md:text-base font-medium tracking-widest uppercase text-amber-800/50 mb-6"
           >
-            Welcome to my world
+            Counsel of Distinction
           </motion.p>
 
           {/* Ornamental line above name */}
@@ -96,9 +96,9 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight">
-            <span className="text-stone-800">Julian</span>
+            <span className="text-stone-800">Justin L</span>
             <br />
-            <span className="gradient-text">Laville</span>
+            <span className="gradient-text">Simon KC</span>
           </h1>
 
           {/* Ornamental line below name */}
@@ -132,8 +132,8 @@ export default function Hero() {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="mt-8 text-stone-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed italic"
         >
-          York University law student dedicated to justice, advocacy, and making
-          a meaningful impact. Building a future in law, one case at a time.
+          Over 25 years of distinguished practice in the highest courts.
+          Relentless advocacy, unwavering integrity, and results that speak for themselves.
         </motion.p>
 
         <motion.div
@@ -146,13 +146,13 @@ export default function Hero() {
             href="#projects"
             className="glow-button px-8 py-4 rounded-sm text-base font-bold tracking-wide uppercase text-sm"
           >
-            View My Work
+            Notable Cases
           </a>
           <a
             href="#about"
             className="px-8 py-4 rounded-sm text-base font-semibold text-stone-500 border-2 border-stone-300 hover:border-amber-800/40 hover:text-stone-700 transition-all duration-300 tracking-wide uppercase text-sm"
           >
-            About Me
+            About Counsel
           </a>
         </motion.div>
       </div>

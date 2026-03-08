@@ -16,13 +16,13 @@ export default function Contact() {
             Get In Touch
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-stone-800 mb-6">
-            Let&apos;s connect and make{" "}
-            <span className="gradient-text">an impact</span>
+            Instruct{" "}
+            <span className="gradient-text">counsel</span>
           </h2>
           <p className="text-stone-500 text-lg mb-10 leading-relaxed">
-            Interested in connecting, collaborating, or discussing opportunities
-            in law? I&apos;m always open to new conversations. Drop me a line
-            and let&apos;s make it happen.
+            For matters requiring the highest calibre of legal representation,
+            contact my chambers directly. All enquiries are treated with the
+            utmost confidence and discretion.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -43,7 +43,7 @@ export default function Contact() {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              Send Me an Email
+              Contact Chambers
             </a>
             <a
               href="https://github.com/jujulaville8-droid"

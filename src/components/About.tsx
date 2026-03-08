@@ -16,7 +16,7 @@ export default function About() {
             About Me
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-stone-800 mb-4">
-            Passionate about pursuing{" "}
+            Decades devoted to{" "}
             <span className="gradient-text">justice</span>
           </h2>
           {/* Vintage divider */}
@@ -47,7 +47,7 @@ export default function About() {
                 <div className="text-center">
                   {/* Monogram */}
                   <div className="w-28 h-28 mx-auto rounded-full border-2 border-amber-800/30 flex items-center justify-center mb-6 bg-stone-50">
-                    <span className="text-5xl font-bold text-amber-800/70" style={{ fontFamily: "Georgia, serif" }}>JL</span>
+                    <span className="text-5xl font-bold text-amber-800/70" style={{ fontFamily: "Georgia, serif" }}>JS</span>
                   </div>
                   {/* Ornamental line */}
                   <div className="flex items-center justify-center gap-3 mb-4">
@@ -57,7 +57,7 @@ export default function About() {
                   </div>
                   <div className="space-y-2">
                     <div className="flex justify-center gap-2">
-                      {["Law", "Advocacy", "Justice"].map((t) => (
+                      {["King's Counsel", "Litigation", "Advocacy"].map((t) => (
                         <span
                           key={t}
                           className="px-3 py-1 text-xs rounded-sm bg-amber-800/5 text-amber-900/60 border border-amber-800/15"
@@ -67,7 +67,7 @@ export default function About() {
                       ))}
                     </div>
                     <div className="flex justify-center gap-2">
-                      {["Research", "Leadership"].map((t) => (
+                      {["Commercial Law", "Public Law"].map((t) => (
                         <span
                           key={t}
                           className="px-3 py-1 text-xs rounded-sm bg-stone-200/50 text-stone-600 border border-stone-300"
@@ -91,21 +91,24 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-stone-700 leading-relaxed">
-              I&apos;m a law student at York University with a passion for justice
-              and advocacy. I bring critical thinking and determination to every
-              challenge, striving to make a real difference.
+              Justin L Simon KC is a distinguished King&apos;s Counsel with over
+              25 years of practice in commercial litigation, public law, and
+              complex cross-border disputes. Appointed KC in recognition of
+              exceptional skill and standing at the Bar.
             </p>
             <p className="text-lg text-stone-500 leading-relaxed">
-              Balancing academics and ambition, I focus on understanding complex
-              legal frameworks and championing the rights of others. Every case
-              is an opportunity to push boundaries and grow as a future lawyer.
+              Known for incisive courtroom advocacy and meticulous case
+              preparation, Justin has represented multinational corporations,
+              government bodies, and high-net-worth individuals in precedent-setting
+              matters. His command of the law is matched only by his commitment
+              to his clients&apos; interests.
             </p>
             <div className="grid grid-cols-2 gap-6 pt-4">
               {[
-                { label: "Mock Trials", value: "10+" },
-                { label: "Areas of Interest", value: "5+" },
-                { label: "Years at York", value: "3+" },
-                { label: "Coffees Consumed", value: "∞" },
+                { label: "Years of Practice", value: "25+" },
+                { label: "Cases Won", value: "500+" },
+                { label: "Landmark Rulings", value: "30+" },
+                { label: "Jurisdictions", value: "12" },
               ].map((stat) => (
                 <div key={stat.label} className="space-y-1">
                   <p className="text-3xl font-bold gradient-text">{stat.value}</p>

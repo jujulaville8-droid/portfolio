@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
   { name: "About", href: "#about" },
-  { name: "Projects", href: "#projects" },
+  { name: "Cases", href: "#projects" },
   { name: "Skills", href: "#skills" },
   { name: "Services", href: "#services" },
   { name: "Contact", href: "#contact" },
@@ -31,7 +31,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="text-xl font-bold gradient-text">
-          JL
+          JS
         </a>
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
@@ -49,7 +49,7 @@ export default function Navbar() {
           href="#contact"
           className="glow-button px-4 py-2 rounded-sm text-xs font-semibold tracking-wide uppercase"
         >
-          Let&apos;s Talk
+          Retain Counsel
         </a>
       </div>
     </motion.nav>

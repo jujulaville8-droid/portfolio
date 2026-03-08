@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Julian Laville | Future Lawyer & Advocate",
-  description: "Personal portfolio of Julian Laville — York University law student",
+  title: "Justin L Simon KC | King's Counsel & Advocate",
+  description: "Justin L Simon KC — Seasoned King's Counsel with decades of distinguished legal practice",
 };
 
 export default function RootLayout({

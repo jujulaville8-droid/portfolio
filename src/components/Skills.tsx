@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 
 const skillCategories = [
   {
-    title: "Legal Knowledge",
-    skills: ["Constitutional Law", "Criminal Law", "Contract Law", "Human Rights", "Privacy Law", "Legal Ethics"],
+    title: "Practice Areas",
+    skills: ["Commercial Litigation", "Public & Administrative Law", "International Arbitration", "Constitutional Law", "Regulatory & Compliance", "White-Collar Defence"],
   },
   {
-    title: "Professional Skills",
-    skills: ["Legal Research", "Case Analysis", "Legal Writing", "Negotiation", "Public Speaking", "Critical Thinking"],
+    title: "Advocacy & Strategy",
+    skills: ["Trial Advocacy", "Appellate Argument", "Cross-Examination", "Expert Witness Management", "Settlement Negotiation", "Judicial Review"],
   },
   {
-    title: "Tools & Interests",
-    skills: ["Westlaw", "LexisNexis", "CanLII", "Moot Court", "Mediation", "Policy Analysis"],
+    title: "Leadership & Recognition",
+    skills: ["King's Counsel (KC)", "Bar Association Fellow", "Published Authority", "Judicial Appointments Panel", "Senior Mentorship", "Legal Policy Advisory"],
   },
 ];
 
@@ -32,7 +32,7 @@ export default function Skills() {
             Areas of Expertise
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-stone-800">
-            My <span className="gradient-text">strengths</span>
+            Core <span className="gradient-text">expertise</span>
           </h2>
           {/* Vintage divider */}
           <div className="flex items-center justify-center gap-4 mt-4">

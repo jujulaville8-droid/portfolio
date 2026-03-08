@@ -4,25 +4,25 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Mock Trial Competition",
+    title: "Crown v. Meridian Holdings",
     description:
-      "Led a team through a multi-round mock trial competition, developing case strategy, witness examinations, and closing arguments.",
-    tags: ["Litigation", "Public Speaking", "Teamwork"],
+      "Successfully defended a multinational corporation in a landmark regulatory prosecution, securing a full acquittal after a six-week trial that reshaped compliance standards across the industry.",
+    tags: ["Commercial Litigation", "Regulatory", "Trial Advocacy"],
     icon: "⚖️",
   },
   {
-    title: "Legal Research Paper",
+    title: "Cross-Border Arbitration — $200M Dispute",
     description:
-      "Authored an in-depth research paper analyzing the intersection of technology and privacy law in the Canadian legal landscape.",
-    tags: ["Research", "Privacy Law", "Analysis"],
+      "Led counsel in a complex international arbitration involving a $200M contractual dispute between sovereign entities, resulting in a precedent-setting award under UNCITRAL rules.",
+    tags: ["Arbitration", "International Law", "Commercial"],
     icon: "📜",
   },
   {
-    title: "Community Legal Aid",
+    title: "Constitutional Rights Challenge",
     description:
-      "Volunteered with a community legal clinic providing pro bono assistance to underserved populations navigating the justice system.",
-    tags: ["Pro Bono", "Advocacy", "Community"],
-    icon: "🤝",
+      "Argued before the Supreme Court in a constitutional challenge that expanded individual privacy rights, establishing new protections that have been cited in over 50 subsequent rulings.",
+    tags: ["Constitutional Law", "Supreme Court", "Human Rights"],
+    icon: "🏛️",
   },
 ];
 
@@ -38,11 +38,11 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <p className="text-sm font-semibold tracking-widest uppercase text-amber-800/60 mb-3">
-            Featured Work
+            Notable Cases
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-stone-800">
-            Work I&apos;m{" "}
-            <span className="gradient-text">proud of</span>
+            Landmark{" "}
+            <span className="gradient-text">cases</span>
           </h2>
           {/* Vintage divider */}
           <div className="flex items-center justify-center gap-4 mt-4">
