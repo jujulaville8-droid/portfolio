@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const roles = ["Developer", "Builder", "Creator", "Designer", "Innovator"];
+const roles = ["Developer", "Builder", "Creator", "Student", "Innovator"];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -74,8 +74,8 @@ export default function Hero() {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="mt-8 text-zinc-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed"
         >
-          I craft beautiful digital experiences with clean code and bold design.
-          Turning ideas into reality, one pixel at a time.
+          York University student crafting beautiful digital experiences with clean
+          code and bold design. Turning ideas into reality, one pixel at a time.
         </motion.p>
 
         <motion.div
