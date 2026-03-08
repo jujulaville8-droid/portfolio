@@ -47,7 +47,7 @@ export default function About() {
                 <div className="text-center">
                   {/* Monogram */}
                   <div className="w-28 h-28 mx-auto rounded-full border-2 border-amber-800/30 flex items-center justify-center mb-6 bg-stone-50">
-                    <span className="text-5xl font-bold text-amber-800/70" style={{ fontFamily: "Georgia, serif" }}>DL</span>
+                    <span className="text-5xl font-bold text-amber-800/70" style={{ fontFamily: "Georgia, serif" }}>JL</span>
                   </div>
                   {/* Ornamental line */}
                   <div className="flex items-center justify-center gap-3 mb-4">
