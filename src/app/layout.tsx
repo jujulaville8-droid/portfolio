@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "John Laville | Future Lawyer & Advocate",
+  title: "Julian Laville | Future Lawyer & Advocate",
   description: "Personal portfolio of John Laville — York University law student",
 };
 
