@@ -28,7 +28,7 @@ export default function Hero() {
         if (!isDeleting) {
           setText(currentRole.slice(0, text.length + 1));
           if (text.length + 1 === currentRole.length) {
-            setTimeout(() => setIsDeleting(true), 1500);
+            setTimeout(() => setIsDeleting(true), 2500);
           }
         } else {
           setText(currentRole.slice(0, text.length - 1));
@@ -38,7 +38,7 @@ export default function Hero() {
           }
         }
       },
-      isDeleting ? 50 : 100
+      isDeleting ? 80 : 150
     );
     return () => clearTimeout(timeout);
   }, [text, isDeleting, roleIndex]);
