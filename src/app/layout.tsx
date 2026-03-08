@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Julian Laville | Future Lawyer & Advocate",
-  description: "Personal portfolio of John Laville — York University law student",
+  description: "Personal portfolio of Julian Laville — York University law student",
 };
 
 export default function RootLayout({
