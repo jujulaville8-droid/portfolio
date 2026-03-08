@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="w-12 h-px bg-amber-800/15" />
       </div>
       <p className="text-sm text-stone-400 italic">
-        &copy; {new Date().getFullYear()} Julian Laville. Built with{" "}
+        &copy; {new Date().getFullYear()} John Laville. Built with{" "}
         <span className="gradient-text font-semibold not-italic">passion</span>.
       </p>
     </footer>
