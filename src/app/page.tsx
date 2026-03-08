@@ -7,10 +7,12 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import GavelCursor from "@/components/GavelCursor";
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden">
+    <main className="relative overflow-hidden cursor-none">
+      <GavelCursor />
       <Navbar />
       <Hero />
       <About />
