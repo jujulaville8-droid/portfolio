@@ -73,20 +73,20 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-zinc-300 leading-relaxed">
-              I&apos;m a student at York University and a developer who loves
-              creating sleek, high-performance web applications. I blend design
-              thinking with technical precision to build experiences that stand out.
+              I&apos;m a student at York University with a passion for creating
+              sleek, impactful digital experiences. I blend design thinking with
+              creative problem-solving to build things that stand out.
             </p>
             <p className="text-lg text-zinc-400 leading-relaxed">
-              Balancing academics and code, I focus on modern frameworks and clean
-              architecture to turn complex ideas into simple, beautiful interfaces.
-              Every project is an opportunity to push boundaries and grow as a creator.
+              Balancing academics and ambition, I focus on turning complex ideas
+              into simple, beautiful interfaces. Every project is an opportunity
+              to push boundaries and grow as a creator.
             </p>
             <div className="grid grid-cols-2 gap-6 pt-4">
               {[
                 { label: "Projects Built", value: "15+" },
                 { label: "Technologies", value: "20+" },
-                { label: "Years Coding", value: "3+" },
+                { label: "Years Creating", value: "3+" },
                 { label: "Coffees Consumed", value: "∞" },
               ].map((stat) => (
                 <div key={stat.label} className="space-y-1">

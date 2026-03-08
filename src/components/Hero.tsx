@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const roles = ["Developer", "Builder", "Creator", "Student", "Innovator"];
+const roles = ["Designer", "Builder", "Creator", "Student", "Innovator"];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -74,8 +74,8 @@ export default function Hero() {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="mt-8 text-zinc-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed"
         >
-          York University student crafting beautiful digital experiences with clean
-          code and bold design. Turning ideas into reality, one pixel at a time.
+          York University student crafting beautiful digital experiences with
+          bold design and creative vision. Turning ideas into reality, one project at a time.
         </motion.p>
 
         <motion.div
@@ -98,21 +98,6 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.8, duration: 0.6 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="w-6 h-10 rounded-full border-2 border-zinc-700 flex items-start justify-center p-1.5"
-          >
-            <motion.div className="w-1.5 h-1.5 rounded-full bg-gradient-to-b from-purple-500 to-cyan-400" />
-          </motion.div>
-        </motion.div>
       </div>
     </section>
   );
