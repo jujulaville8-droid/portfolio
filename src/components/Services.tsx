@@ -40,7 +40,7 @@ export default function Services() {
     try {
       const payload = {
         _subject: `Booking Request: ${service.title}`,
-        _cc: "jusncase17@gmail.com",
+        _cc: "john9605@hotmail.com",
         name,
         email,
         service: service.title,
