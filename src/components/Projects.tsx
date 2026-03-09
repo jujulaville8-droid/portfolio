@@ -4,24 +4,24 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Crown v. Meridian Holdings",
+    title: "Isaac v. The Government of Antigua & Barbuda",
     description:
-      "Successfully defended a multinational corporation in a landmark regulatory prosecution, securing a full acquittal after a six-week trial that reshaped compliance standards across the industry.",
-    tags: ["Commercial Litigation", "Regulatory", "Trial Advocacy"],
+      "Justin L. Simon KC secured a landmark victory before the Caribbean's highest appellate court, successfully representing Dr. Giselle Isaac in an unlawful dismissal claim against the Government of Antigua & Barbuda. The Privy Council ordered the government to pay compensation in excess of EC$3.5 million, setting a firm precedent for the protection of public servants against politically motivated terminations.",
+    tags: ["Judicial Committee of the Privy Council"],
     icon: "⚖️",
   },
   {
-    title: "Cross-Border Arbitration — $200M Dispute",
+    title: "The Fabricated Bus Case — R v. Wilmoth Daniel",
     description:
-      "Led counsel in a complex international arbitration involving a $200M contractual dispute between sovereign entities, resulting in a precedent-setting award under UNCITRAL rules.",
-    tags: ["Arbitration", "International Law", "Commercial"],
+      "In a widely followed and politically charged prosecution, Mr. Simon secured a full acquittal for his client, defeating both the Attorney General's office and the Director of Public Prosecutions. His methodical dismantling of the State's case reaffirmed every individual's constitutional right to a fair hearing free from executive interference.",
+    tags: ["Eastern Caribbean Supreme Court"],
     icon: "📜",
   },
   {
-    title: "Constitutional Rights Challenge",
+    title: "Walker & Frank v. The Attorney General of Antigua & Barbuda",
     description:
-      "Argued before the Supreme Court in a constitutional challenge that expanded individual privacy rights, establishing new protections that have been cited in over 50 subsequent rulings.",
-    tags: ["Constitutional Law", "Supreme Court", "Human Rights"],
+      "Mr. Simon represented the Barbuda People's Movement before the Privy Council in a historic dispute over the communal land rights of the indigenous people of Barbuda. Advancing detailed constitutional arguments under the Barbuda Land Act of 2007, he brought the island's most consequential land rights dispute to the attention of the Law Lords in London.",
+    tags: ["Judicial Committee of the Privy Council, London"],
     icon: "🏛️",
   },
 ];
