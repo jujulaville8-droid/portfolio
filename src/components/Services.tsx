@@ -31,7 +31,7 @@ export default function Services() {
     const total = hours * rate;
     const subject = encodeURIComponent(`Booking Request: ${service.title}`);
     const body = encodeURIComponent(
-      `Dear Mr. Simon,\n\nI wish to retain your services for ${service.title}.\n\nDetails:\n- Service: ${service.title}\n- Hours: ${hours}\n- Estimated Total: $${total}\n\nPlease advise on your earliest availability.\n\nYours faithfully.`
+      `Dear Mr. Simon KC,\n\nI wish to retain your services for ${service.title}.\n\nDetails:\n- Service: ${service.title}\n- Hours: ${hours}\n- Estimated Total: $${total}\n\nPlease advise on your earliest availability.\n\nYours faithfully.`
     );
     window.location.href = `mailto:jujulaville8@gmail.com?subject=${subject}&body=${body}`;
   };
@@ -61,7 +61,7 @@ export default function Services() {
             <div className="w-20 h-px bg-amber-800/25" />
           </div>
           <p className="mt-6 text-stone-500 text-lg max-w-2xl mx-auto">
-            Senior legal representation at{" "}
+            Senior King&apos;s Counsel representation at{" "}
             <span className="font-bold text-stone-700">$750/hour</span>
           </p>
         </motion.div>

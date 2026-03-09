@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const roles = [
-  "Senior Counsel",
+  "King's Counsel",
   "Litigator",
   "Advocate",
   "Strategist",
