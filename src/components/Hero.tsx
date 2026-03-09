@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const roles = [
-  "King's Counsel",
+  "Senior Counsel",
   "Litigator",
   "Advocate",
   "Strategist",
@@ -98,7 +98,7 @@ export default function Hero() {
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight">
             <span className="text-stone-800">Justin L</span>
             <br />
-            <span className="gradient-text">Simon KC</span>
+            <span className="gradient-text">Simon</span>
           </h1>
 
           {/* Ornamental line below name */}

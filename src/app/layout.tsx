@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Justin L Simon KC | King's Counsel & Advocate",
-  description: "Justin L Simon KC — Seasoned King's Counsel with decades of distinguished legal practice",
+  title: "Justin L Simon | Senior Lawyer & Advocate",
+  description: "Justin L Simon — Seasoned lawyer with decades of distinguished legal practice",
 };
 
 export default function RootLayout({

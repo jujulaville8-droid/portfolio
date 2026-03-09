@@ -13,7 +13,7 @@ const skillCategories = [
   },
   {
     title: "Leadership & Recognition",
-    skills: ["King's Counsel (KC)", "Bar Association Fellow", "Published Authority", "Judicial Appointments Panel", "Senior Mentorship", "Legal Policy Advisory"],
+    skills: ["Senior Counsel", "Bar Association Fellow", "Published Authority", "Judicial Appointments Panel", "Senior Mentorship", "Legal Policy Advisory"],
   },
 ];
 

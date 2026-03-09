@@ -57,7 +57,7 @@ export default function About() {
                   </div>
                   <div className="space-y-2">
                     <div className="flex justify-center gap-2">
-                      {["King's Counsel", "Litigation", "Advocacy"].map((t) => (
+                      {["Senior Counsel", "Litigation", "Advocacy"].map((t) => (
                         <span
                           key={t}
                           className="px-3 py-1 text-xs rounded-sm bg-amber-800/5 text-amber-900/60 border border-amber-800/15"
@@ -91,10 +91,10 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-stone-700 leading-relaxed">
-              Justin L Simon KC is a distinguished King&apos;s Counsel with over
+              Justin L Simon is a distinguished senior lawyer with over
               25 years of practice in commercial litigation, public law, and
-              complex cross-border disputes. Appointed KC in recognition of
-              exceptional skill and standing at the Bar.
+              complex cross-border disputes. Recognised for exceptional skill
+              and standing at the Bar.
             </p>
             <p className="text-lg text-stone-500 leading-relaxed">
               Known for incisive courtroom advocacy and meticulous case
