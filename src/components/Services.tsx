@@ -21,16 +21,51 @@ const services = [
   },
 ];
 
+type FormStatus = "idle" | "sending" | "sent" | "error";
+
 export default function Services() {
   const [hours, setHours] = useState(1);
   const [selectedService, setSelectedService] = useState(0);
-  const handleBook = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState<FormStatus>("idle");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("sending");
+
     const service = services[selectedService];
-    const subject = encodeURIComponent(`Booking Request: ${service.title}`);
-    const body = encodeURIComponent(
-      `Dear Mr. Simon KC,\n\nI wish to retain your services for ${service.title}.\n\nDetails:\n- Service: ${service.title}\n- Estimated Hours: ${hours}\n\nPlease advise on your earliest availability and fee arrangement.\n\nYours faithfully.`
-    );
-    window.location.href = `mailto:jujulaville8@gmail.com?subject=${subject}&body=${body}`;
+
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/jujulaville8@gmail.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          _subject: `Booking Request: ${service.title}`,
+          name,
+          email,
+          service: service.title,
+          "Estimated Hours": hours,
+          message: message || "No additional message provided.",
+        }),
+      });
+
+      if (res.ok) {
+        setStatus("sent");
+        setName("");
+        setEmail("");
+        setMessage("");
+        setHours(1);
+        setTimeout(() => setStatus("idle"), 5000);
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 4000);
+      }
+    } catch {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 4000);
+    }
   };
 
   return (
@@ -112,7 +147,7 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Booking calculator */}
+        {/* Booking form */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -122,54 +157,113 @@ export default function Services() {
         >
           <div className="glow-card rounded-sm p-8">
             <h3 className="text-lg font-bold text-stone-800 mb-1">
-              Estimate &amp; Book
+              Request a Consultation
             </h3>
             <div className="w-10 h-px bg-amber-800/25 mb-6" />
 
-            {/* Selected service */}
-            <div className="mb-6">
-              <p className="text-xs uppercase tracking-wide text-stone-400 mb-1">
-                Service
-              </p>
-              <p className="text-stone-700 font-semibold">
-                {services[selectedService].title}
-              </p>
-            </div>
-
-            {/* Hours selector */}
-            <div className="mb-6">
-              <p className="text-xs uppercase tracking-wide text-stone-400 mb-2">
-                Hours
-              </p>
-              <div className="flex items-center gap-4">
-                <button
-                  onClick={() => setHours(Math.max(1, hours - 1))}
-                  className="w-10 h-10 rounded-sm border-2 border-stone-300 hover:border-amber-800/40 text-stone-600 hover:text-stone-800 flex items-center justify-center transition-colors text-lg font-bold"
-                >
-                  −
-                </button>
-                <span className="text-2xl font-bold text-stone-800 w-12 text-center">
-                  {hours}
-                </span>
-                <button
-                  onClick={() => setHours(Math.min(20, hours + 1))}
-                  className="w-10 h-10 rounded-sm border-2 border-stone-300 hover:border-amber-800/40 text-stone-600 hover:text-stone-800 flex items-center justify-center transition-colors text-lg font-bold"
-                >
-                  +
-                </button>
+            <form onSubmit={handleSubmit} className="space-y-5">
+              {/* Selected service display */}
+              <div>
+                <p className="text-xs uppercase tracking-wide text-stone-400 mb-1">
+                  Service
+                </p>
+                <p className="text-stone-700 font-semibold">
+                  {services[selectedService].title}
+                </p>
               </div>
-            </div>
 
-            {/* Book button */}
-            <button
-              onClick={handleBook}
-              className="glow-button w-full py-4 rounded-sm text-sm font-bold tracking-wide uppercase"
-            >
-              Instruct Now
-            </button>
-            <p className="text-xs text-stone-400 text-center mt-3">
-              Opens your email client with booking details
-            </p>
+              {/* Name */}
+              <div>
+                <label className="text-xs uppercase tracking-wide text-stone-400 block mb-1.5">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Your full name"
+                  className="w-full px-4 py-3 rounded-sm bg-stone-50 border border-stone-200 text-stone-800 placeholder:text-stone-300 focus:outline-none focus:border-amber-800/40 transition-colors text-sm"
+                />
+              </div>
+
+              {/* Email */}
+              <div>
+                <label className="text-xs uppercase tracking-wide text-stone-400 block mb-1.5">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="your@email.com"
+                  className="w-full px-4 py-3 rounded-sm bg-stone-50 border border-stone-200 text-stone-800 placeholder:text-stone-300 focus:outline-none focus:border-amber-800/40 transition-colors text-sm"
+                />
+              </div>
+
+              {/* Hours selector */}
+              <div>
+                <p className="text-xs uppercase tracking-wide text-stone-400 mb-2">
+                  Estimated Hours
+                </p>
+                <div className="flex items-center gap-4">
+                  <button
+                    type="button"
+                    onClick={() => setHours(Math.max(1, hours - 1))}
+                    className="w-10 h-10 rounded-sm border-2 border-stone-300 hover:border-amber-800/40 text-stone-600 hover:text-stone-800 flex items-center justify-center transition-colors text-lg font-bold"
+                  >
+                    −
+                  </button>
+                  <span className="text-2xl font-bold text-stone-800 w-12 text-center">
+                    {hours}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setHours(Math.min(20, hours + 1))}
+                    className="w-10 h-10 rounded-sm border-2 border-stone-300 hover:border-amber-800/40 text-stone-600 hover:text-stone-800 flex items-center justify-center transition-colors text-lg font-bold"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+
+              {/* Message */}
+              <div>
+                <label className="text-xs uppercase tracking-wide text-stone-400 block mb-1.5">
+                  Brief Description <span className="normal-case text-stone-300">(optional)</span>
+                </label>
+                <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="Briefly describe your legal matter..."
+                  rows={4}
+                  className="w-full px-4 py-3 rounded-sm bg-stone-50 border border-stone-200 text-stone-800 placeholder:text-stone-300 focus:outline-none focus:border-amber-800/40 transition-colors text-sm resize-none"
+                />
+              </div>
+
+              {/* Submit button */}
+              <button
+                type="submit"
+                disabled={status === "sending" || status === "sent"}
+                className={`glow-button w-full py-4 rounded-sm text-sm font-bold tracking-wide uppercase transition-all ${
+                  status === "sent"
+                    ? "!bg-green-800 !border-green-800"
+                    : status === "error"
+                    ? "!bg-red-800 !border-red-800"
+                    : ""
+                } ${status === "sending" ? "opacity-70" : ""}`}
+              >
+                {status === "idle" && "Submit Request"}
+                {status === "sending" && "Sending..."}
+                {status === "sent" && "Request Sent Successfully"}
+                {status === "error" && "Something went wrong — try again"}
+              </button>
+
+              <p className="text-xs text-stone-400 text-center">
+                All enquiries are treated with the utmost confidence
+              </p>
+            </form>
           </div>
         </motion.div>
       </div>
