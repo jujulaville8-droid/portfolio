@@ -24,14 +24,11 @@ const services = [
 export default function Services() {
   const [hours, setHours] = useState(1);
   const [selectedService, setSelectedService] = useState(0);
-  const rate = 750;
-
   const handleBook = () => {
     const service = services[selectedService];
-    const total = hours * rate;
     const subject = encodeURIComponent(`Booking Request: ${service.title}`);
     const body = encodeURIComponent(
-      `Dear Mr. Simon KC,\n\nI wish to retain your services for ${service.title}.\n\nDetails:\n- Service: ${service.title}\n- Hours: ${hours}\n- Estimated Total: $${total}\n\nPlease advise on your earliest availability.\n\nYours faithfully.`
+      `Dear Mr. Simon KC,\n\nI wish to retain your services for ${service.title}.\n\nDetails:\n- Service: ${service.title}\n- Estimated Hours: ${hours}\n\nPlease advise on your earliest availability and fee arrangement.\n\nYours faithfully.`
     );
     window.location.href = `mailto:jujulaville8@gmail.com?subject=${subject}&body=${body}`;
   };
@@ -61,8 +58,8 @@ export default function Services() {
             <div className="w-20 h-px bg-amber-800/25" />
           </div>
           <p className="mt-6 text-stone-500 text-lg max-w-2xl mx-auto">
-            Senior King&apos;s Counsel representation at{" "}
-            <span className="font-bold text-stone-700">$750/hour</span>
+            Senior King&apos;s Counsel representation —{" "}
+            <span className="font-bold text-stone-700">fees upon consultation</span>
           </p>
         </motion.div>
 
@@ -160,22 +157,6 @@ export default function Services() {
                 >
                   +
                 </button>
-              </div>
-            </div>
-
-            {/* Price breakdown */}
-            <div className="border-t border-stone-200 pt-4 mb-6 space-y-2">
-              <div className="flex justify-between text-sm text-stone-500">
-                <span>Rate</span>
-                <span>${rate}/hr</span>
-              </div>
-              <div className="flex justify-between text-sm text-stone-500">
-                <span>Hours</span>
-                <span>×{hours}</span>
-              </div>
-              <div className="flex justify-between text-lg font-bold text-stone-800 pt-2 border-t border-stone-200">
-                <span>Estimated Total</span>
-                <span>${hours * rate}</span>
               </div>
             </div>
 
