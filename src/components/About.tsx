@@ -42,43 +42,12 @@ export default function About() {
               {/* Outer vintage frame */}
               <div className="absolute inset-0 border-2 border-amber-800/20 rounded-sm" />
               <div className="absolute inset-2 border border-amber-800/10 rounded-sm" />
-              {/* Inner content */}
-              <div className="absolute inset-4 bg-stone-100 rounded-sm flex items-center justify-center">
-                <div className="text-center">
-                  {/* Monogram */}
-                  <div className="w-28 h-28 mx-auto rounded-full border-2 border-amber-800/30 flex items-center justify-center mb-6 bg-stone-50">
-                    <span className="text-5xl font-bold text-amber-800/70" style={{ fontFamily: "Georgia, serif" }}>JS</span>
-                  </div>
-                  {/* Ornamental line */}
-                  <div className="flex items-center justify-center gap-3 mb-4">
-                    <div className="w-8 h-px bg-amber-800/20" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-amber-800/30" />
-                    <div className="w-8 h-px bg-amber-800/20" />
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex justify-center gap-2">
-                      {["King's Counsel", "Litigation", "Advocacy"].map((t) => (
-                        <span
-                          key={t}
-                          className="px-3 py-1 text-xs rounded-sm bg-amber-800/5 text-amber-900/60 border border-amber-800/15"
-                        >
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-                    <div className="flex justify-center gap-2">
-                      {["Commercial Law", "Public Law"].map((t) => (
-                        <span
-                          key={t}
-                          className="px-3 py-1 text-xs rounded-sm bg-stone-200/50 text-stone-600 border border-stone-300"
-                        >
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {/* Photo */}
+              <img
+                src="/justin-simon.jpg"
+                alt="Justin L Simon KC"
+                className="absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] object-cover rounded-sm"
+              />
             </div>
           </motion.div>
 
