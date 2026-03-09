@@ -38,17 +38,20 @@ export default function Services() {
     const service = services[selectedService];
 
     try {
+      const payload = {
+        _subject: `Booking Request: ${service.title}`,
+        _cc: "jusncase17@gmail.com",
+        name,
+        email,
+        service: service.title,
+        "Estimated Hours": hours,
+        message: message || "No additional message provided.",
+      };
+
       const res = await fetch("https://formsubmit.co/ajax/jujulaville8@gmail.com", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          _subject: `Booking Request: ${service.title}`,
-          name,
-          email,
-          service: service.title,
-          "Estimated Hours": hours,
-          message: message || "No additional message provided.",
-        }),
+        body: JSON.stringify(payload),
       });
 
       if (res.ok) {
