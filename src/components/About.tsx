@@ -92,7 +92,7 @@ export default function About() {
           >
             <p className="text-lg text-stone-700 leading-relaxed">
               Justin L Simon KC is a distinguished King&apos;s Counsel with over
-              25 years of practice in commercial litigation, public law, and
+              50 years of practice in commercial litigation, public law, and
               complex cross-border disputes. Appointed KC in recognition of
               exceptional skill and standing at the Bar.
             </p>
@@ -105,7 +105,7 @@ export default function About() {
             </p>
             <div className="grid grid-cols-2 gap-6 pt-4">
               {[
-                { label: "Years of Practice", value: "25+" },
+                { label: "Years of Practice", value: "50+" },
                 { label: "Cases Won", value: "500+" },
                 { label: "Landmark Rulings", value: "30+" },
                 { label: "Jurisdictions", value: "12" },

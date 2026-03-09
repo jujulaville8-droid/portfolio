@@ -132,7 +132,7 @@ export default function Hero() {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="mt-8 text-stone-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed italic"
         >
-          Over 25 years of distinguished practice in the highest courts.
+          Over 50 years of distinguished practice in the highest courts.
           Relentless advocacy, unwavering integrity, and results that speak for themselves.
         </motion.p>
 
