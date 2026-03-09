@@ -54,6 +54,17 @@ export default function Hero() {
         <circle cx="50" cy="5" r="3" fill="currentColor" />
       </svg>
 
+      {/* Subtle Antigua island outline */}
+      <svg
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[400px] md:w-[600px] md:h-[480px] lg:w-[700px] lg:h-[560px] text-amber-800/[0.06] pointer-events-none"
+        viewBox="0 0 400 321"
+        fill="currentColor"
+        stroke="currentColor"
+        strokeWidth="0.5"
+      >
+        <path d="M27.7,210.9 L35.0,191.7 L29.0,175.3 L29.7,160.9 L56.9,147.4 L44.9,142.9 L10.0,124.5 L28.5,107.7 L58.2,95.4 L96.9,84.4 L83.3,62.2 L86.1,42.3 L101.4,24.9 L125.5,10.0 L179.0,16.4 L200.3,46.2 L213.2,80.8 L241.0,101.6 L242.7,86.7 L247.2,76.9 L263.0,55.7 L272.5,70.1 L285.6,78.4 L302.0,81.1 L321.2,78.7 L313.0,87.5 L308.3,93.8 L301.2,98.3 L285.9,101.6 L293.6,125.6 L310.8,136.9 L332.9,136.3 L355.6,124.5 L368.1,124.5 L376.7,132.7 L382.4,141.0 L390.0,159.9 L378.6,159.1 L355.5,160.7 L344.1,159.9 L359.7,178.6 L374.1,187.5 L382.3,196.5 L378.5,216.1 L359.6,245.2 L340.7,246.4 L319.0,235.8 L291.7,228.5 L278.6,234.6 L278.0,249.8 L285.9,291.1 L273.4,311.1 L245.9,298.4 L218.6,274.7 L206.8,262.0 L195.4,264.7 L161.1,280.8 L138.0,284.8 L103.0,285.0 L81.2,280.3 L27.6,249.0 L16.3,233.7 L27.7,210.9 Z" />
+      </svg>
+
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Scales of Justice icon */}
         <motion.div
